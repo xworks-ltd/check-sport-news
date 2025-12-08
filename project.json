@@ -7,7 +7,7 @@
     "UiPath.System.Activities": "[25.10.3]",
     "UiPath.System.Activities.Runtime": "[25.10.3]",
     "UiPath.Testing.Activities": "[25.10.0]",
-    "UiPath.UIAutomation.Activities.Runtime.Portable": "[23.10.7]",
+    "UiPath.UIAutomation.Activities.Runtime.Portable": "[25.10.21]",
     "UiPath.WebAPI.Runtime": "[1.18.0]"
   },
   "webServices": [],
