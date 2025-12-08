@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="868,1315" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="868,1315" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -33,7 +33,6 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>System.Reflection</x:String>
-      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -73,21 +72,65 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1105,898.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="664,1250" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Hello there&quot;]" />
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: BBC Sport - Scores, Fixtures, News - Live Sport" sap:VirtualizedContainerService.HintSize="602,1139" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0246ff5a-ec34-46cc-8207-ff5f55f4e44d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,817" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="cookie" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckElement Result="{x:Null}" DelayBefore="0" DisplayName="Check Element 'XLet us'" sap:VirtualizedContainerService.HintSize="526,129" sap2010:WorkflowViewState.IdRef="NCheckElement_1" OutUiElement="[cookie]" ScopeIdentifier="0246ff5a-ec34-46cc-8207-ff5f55f4e44d" Version="V3">
+              <uix:NCheckElement.Target>
+                <uix:TargetAnchorable BrowserURL="https://cdn.privacy-mgmt.com/index.html?hasCsp=true&amp;message_id=905534&amp;consentUUID=null&amp;preload_message=true&amp;version=v1&amp;consentLanguage=en" DesignTimeRectangle="607, 355, 706, 608" FriendlyName="'XLet us'" FullSelectorArgument="&lt;webctrl id='sp_message_iframe_905534' tag='IFRAME' /&gt;&lt;webctrl id='notice' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sp_message_iframe_905534' tag='IFRAME' /&gt;&lt;webctrl id='notice' tag='DIV' type='' class='message type-modal' aaname='' check:innerText='Let us know you agree to advertising cookies&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;We and our 42 partners use cookies and similar' /&gt;" Guid="dfadd6f3-48d2-4930-bd35-71f696cf5747" InformativeScreenshot="f767777a6a30ddb7c3f8d8a86994b6e4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BBC Sport - Scores, Fixtures, News - Live Sport' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NCheckElement.Target>
+            </uix:NCheckElement>
+            <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="526,560" sap2010:WorkflowViewState.IdRef="NCheckState_1" InUiElement="[cookie]" ScopeIdentifier="0246ff5a-ec34-46cc-8207-ff5f55f4e44d" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="492,217" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I agree'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0246ff5a-ec34-46cc-8207-ff5f55f4e44d" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://cdn.privacy-mgmt.com/index.html?hasCsp=true&amp;message_id=905534&amp;consentUUID=null&amp;preload_message=true&amp;version=v1&amp;consentLanguage=en" DesignTimeRectangle="980, 826, 230, 44" ElementType="Button" FriendlyName="'I agree'" FullSelectorArgument="&lt;webctrl id='sp_message_iframe_905534' tag='IFRAME' /&gt;&lt;webctrl aria-label='I agree' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sp_message_iframe_905534' tag='IFRAME' /&gt;&lt;webctrl aria-label='I agree' tag='BUTTON' type='' class='message-component message-button no-children focusable button sp_choice_type_11' aaname='I agree' check:innerText='I agree' /&gt;" Guid="2e65a795-9683-4acb-9d97-4c8252fca4c1" InformativeScreenshot="63c84af5ce73b3fe51a9b8567e44b450.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='BBC Sport - Scores, Fixtures, News - Live Sport' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="416,80" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" InformativeScreenshot="d0636797efafd238b26fde283cd09da8.jpg" Selector="&lt;html title='BBC Sport - Scores, Fixtures, News - Live Sport' app='chrome.exe' /&gt;" Title="BBC Sport - Scores, Fixtures, News - Live Sport" Url="https://www.bbc.com/sport" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
