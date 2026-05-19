@@ -16,7 +16,7 @@
   "studioVersion": "23.10.3.0",
   "projectVersion": "1.0.161444463",
   "runtimeOptions": {
-    "autoDispose": false,
+    "autoDispose":  false,
     "netFrameworkLazyLoading": false,
     "isPausable": true,
     "isAttended": false,
