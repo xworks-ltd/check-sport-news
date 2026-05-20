@@ -23,7 +23,7 @@
     "requiresUserInteraction": false,
     "supportsPersistence": false,
     "workflowSerialization": "DataContract",
-    "excludedLoggedData": [
+    "excludedLoggedData":[
       "Private:*",
       "*password*"
     ],
@@ -38,7 +38,7 @@
     "outputType": "Tests",
     "libraryOptions": {
       "includeOriginalXaml": false,
-      "privateWorkflows": []
+      "privateWorkflows":  []
     },
     "processOptions": {
       "ignoredFiles": []
