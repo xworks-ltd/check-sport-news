@@ -38,10 +38,10 @@
     "outputType": "Tests",
     "libraryOptions": {
       "includeOriginalXaml": false,
-      "privateWorkflows": []
+      "privateWorkflows":  []
     },
     "processOptions": {
-      "ignoredFiles": []
+      "ignoredFiles":  []
     },
     "fileInfoCollection": [
       {
@@ -59,8 +59,8 @@
     {
       "filePath": "TestCase_1.xaml",
       "uniqueId": "e6147b95-5f37-4528-a5d3-2cc2294599f4",
-      "input": [],
-      "output": []
+      "input":  [],
+      "output":  []
     }
   ],
   "isTemplate": false,
