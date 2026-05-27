@@ -38,7 +38,7 @@
     "outputType": "Tests",
     "libraryOptions": {
       "includeOriginalXaml": false,
-      "privateWorkflows":  []
+      "privateWorkflows": []
     },
     "processOptions": {
       "ignoredFiles": []
